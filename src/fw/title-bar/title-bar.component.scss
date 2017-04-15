@@ -1,42 +1,40 @@
 
 :host {
-  display: flex;
+  display: block;
 }
 
 .title-bar {
   flex-grow: 1;
   display: flex;
   min-height: 80px;
+}
 
-  .menu-area {
-    display: flex;
-    flex-direction: column;
+.menu-area {
+  display: flex;
+  flex-direction: column;
     flex-grow: 1;
     padding-right: 20px;
-  }
 }
+
 .title-bar-small {
   flex-grow: 1;
   display: flex;
   min-height: 56px;
+}
 
-  .small-image-holder {
+.small-image-holder {
     flex-grow: 1;
-  }
+}
 
-  .small-image {
+.small-image {
     height: 50px;
-  }
+}
 
-  span {
+span {
     margin-left: 10px;
     margin-right: 20px;
     font-size: 25px;
     line-height: 50px;
-    &:last-child{
-      margin-right: 7%;
-    }
-  }
 }
 
 

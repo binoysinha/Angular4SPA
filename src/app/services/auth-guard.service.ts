@@ -1,18 +1,16 @@
-/**
- * Created by binoy.sinha on 4/14/2017.
- */
-import { Injectable }     from '@angular/core';
-import { CanActivate, CanActivateChild, Router }    from '@angular/router';
+import { Injectable } from '@angular/core';
+import { CanActivate, CanActivateChild, Router } from '@angular/router';
 
 import { UserService } from './user.service';
 
 @Injectable()
 export class AuthGuard implements CanActivate, CanActivateChild {
 
-  constructor(private userService: UserService, private router: Router) {}
+  constructor(private userService: UserService, private router: Router) {
+  }
 
-  canActivate() : boolean {
-    console.log('AuthGuard#canActivate called ' + this.userService.isAuthenticated );
+  canActivate(): boolean {
+    console.log('AuthGuard#canActivate called ' + this.userService.isAuthenticated);
 
     if (!this.userService.isAuthenticated) {
       console.log('not auth');
@@ -21,7 +19,7 @@ export class AuthGuard implements CanActivate, CanActivateChild {
     return this.userService.isAuthenticated;
   }
 
-  canActivateChild() : boolean {
+  canActivateChild(): boolean {
     return this.canActivate();
   }
 }

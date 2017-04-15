@@ -1,11 +1,8 @@
-/**
- * Created by binoy.sinha on 4/14/2017.
- */
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Observable } from 'rxjs/Rx';
 import { UserApi } from '../../fw/users/user-api';
-import { Router } from '@angular/router';
 
 @Injectable()
 export class UserService implements UserApi {

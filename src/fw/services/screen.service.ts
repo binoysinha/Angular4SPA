@@ -1,6 +1,3 @@
-/**
- * Created by binoy.sinha on 4/9/2017.
- */
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 

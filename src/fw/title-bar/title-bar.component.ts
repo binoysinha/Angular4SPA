@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ScreenService } from '../services/screen.service';
 import { MenuService } from '../services/menu.service';
 
@@ -9,11 +10,11 @@ import { MenuService } from '../services/menu.service';
 })
 export class TitleBarComponent implements OnInit {
 
-  constructor(private screenService: ScreenService, public menuService: MenuService) { }
+  constructor(private screenService: ScreenService,
+              private menuService: MenuService) {
+  }
 
   ngOnInit() {
   }
-
-
 
 }

@@ -11,7 +11,7 @@ export interface MenuItem {
 export class MenuService {
 
   items: Array<MenuItem>;
-  isVertical = false;
+  isVertical = true;
   showingLeftSideMenu = false;
 
   toggleLeftSideMenu(): void {
@@ -19,7 +19,7 @@ export class MenuService {
     this.showingLeftSideMenu = !this.showingLeftSideMenu;
   }
 
-  toggleMenuOrientation(): void {
+  toggleMenuOrientation() {
     this.isVertical = !this.isVertical;
   }
 
